@@ -1,0 +1,387 @@
+*{
+    margin:0;
+    padding:0;
+    scrollbar-width: none;
+    
+}
+h2, h3, h1{
+    font-family: 'Archivo Black', sans-serif;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+header{
+    height: 100vh;
+}
+.separador{
+    width: 100%;
+    
+}
+/* Contacto header */
+#contacto-header{
+    padding: 5px;
+    text-align:center;
+    height: 7vh;
+    background-color: #44B7CF;
+    color: #fff;
+}
+
+#contacto-header ul li{
+    display: inline;
+    vertical-align: middle;
+    padding: 5px;
+}
+#contacto-header ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+#Registro{
+    text-decoration: none;
+    padding: 5px;
+    background-color: rgb(17, 151, 191);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#Registro:hover{
+        background-color: rgb(32, 188, 236);
+        box-shadow: 0 10px 10px rgb(0 0 0 / 50%);
+        transform: translateY(-2px)!important;
+}
+#face{
+    width: 2.5%;
+}
+#whats{
+    width: 3%;
+}
+/* end */
+/* Benner */
+#banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("/img/madreTierra.jpeg");
+    height: 93vh;
+    background-size: cover;
+    /* background-position: 10% 50%; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+}
+#banner h1{
+    margin-top:8vh;
+    font-size: 60px;
+    color: rgb(56, 209, 255);
+}
+
+
+/* end */
+/* Nav */
+nav{
+    /* display: flex; */
+    justify-content: space-evenly;
+    padding:10px;
+}
+nav ul{
+    margin: 0 auto;
+    align-self: center;
+}
+nav ul li{
+    display: inline;
+    padding: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(22, 201, 255);
+}
+
+.menu-fixed {
+	position:fixed;
+	z-index:1000;
+	top:0;
+	
+	width:100%;
+    background-color: #44B7CF;
+	box-shadow:0px 4px 3px rgba(0,0,0,.5);
+}
+
+/* end */
+/*Transporte*/
+#Transporte{
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("/img/tulum-mexico.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    text-align: center;
+    padding-top: 5%;
+}
+#Transporte h2{
+    color: #fff;
+}
+#Transporte button{
+    padding: 10px 25px;
+    background-color: rgb(17, 151, 191);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#Transporte button:hover{
+    background-color: rgb(32, 188, 236);
+    box-shadow: 0 10px 10px rgb(0 0 0 / 50%);
+    transform: translateY(-2px)!important;
+}
+#Transporte button, #Transporte h2{
+    margin-bottom: 2%;
+}
+.transport{
+    margin: 0 auto;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3); 
+    margin-bottom: 5%;
+    border-radius: 10px;
+    border: 1px solid rgb(197, 197, 197);
+    width: 360px;
+    text-align: center;
+    background-color: rgb(248, 248, 248);
+}
+.transport a{
+    text-decoration: none;
+}
+.miniatura p{
+    margin:auto;
+    color: #fff;
+}
+.miniatura{
+    display: flex;
+    background-image: url("/img/suburban.jpg");
+    border-radius: 10px 10px 0px 0px;
+    height: 250px;
+    width: 100%;
+    background-size:cover;
+    object-position: 50% 50%;
+}
+#info{
+    font-size:18px;
+    visibility: hidden;
+}
+.transport a div:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.4)  url("/img/suburban.jpg");
+    background-size:cover;
+    background-blend-mode: darken;
+    transition: all 0.2s ease-in-out 0s;
+}
+.transport a div:hover #info{
+    visibility: visible;
+}
+.icons-person{
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #000;
+    background-color: #f1f1f1;
+    border-radius: 0px 0px 10px 10px;
+}
+.icons-person img{
+    display: inline-block;
+}
+.icons-person img{
+    vertical-align: middle;
+    width:6%;
+}
+.icons-person p{
+    display: inline-block;
+    display: inline-block;
+    padding-right:10px;
+}
+#click-transport{
+    display: flex;
+}
+/* end */
+
+/* Servicios */
+#Servicios{
+    padding-top:5%;
+    text-align: center;
+}
+#Servicios div{
+    display: inline-block;
+}
+.Serv{
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    width: 300px;
+    text-align: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+.Serv a{
+    text-decoration: none;
+}
+.miniatura-servicio h3{
+    margin-top:40%;
+    color: #fff;
+}
+.miniatura-servicio{
+    display: flex;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/Destination.jpg");
+    height: 350px;
+    width: 100%;
+    background-size:cover;
+    object-position: 50% 50%;
+}
+#info2{
+    font-size:18px;
+    visibility: hidden;
+    color: #fff;
+    margin-top: 50%;
+}
+.Serv a div:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.4)  url("/img/Destination.jpg");
+    background-size:cover;
+    background-blend-mode: darken;
+    
+}
+.Serv a div:hover #info2{
+    visibility: visible;
+}
+
+/* end */
+/* testimonios */
+#testimonios{
+    text-align: center;
+    height: 70vh;
+    background-color: #f1f1f1;
+    /* background-color: rgba(206, 21, 235, 0.433); */
+    /* color: #fff; */
+    border: 1px solid rgba(255, 0, 0, 0);
+}
+#testimonios h2{
+    padding-top:2%;
+}
+/* end */
+/* testimonios */
+#imagenes{
+    text-align: center;
+    height: 70vh;
+    border: 1px solid rgba(255, 0, 0, 0);
+}
+#imagenes h2{
+    padding-top:2%;
+}
+/*Carusell*/
+
+#myCarousel{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top:5%;
+}
+#myCarousel p{
+    text-align: justify;
+}
+.carousel-indicators{
+    background-color: #0000006a;
+}
+.carousel-inner{
+    padding-bottom: 5%;
+}
+
+/* end Carrusell */
+/* end */
+/* contacto home */
+#contact-header{
+    border: 1px solid rgba(255, 0, 0, 0);
+    height: 95vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url("/img/camioneta.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: #fff;
+}
+#contact-header ul{
+    margin:10px;
+}
+#contact-header div{
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+#contact-header div ul{
+    list-style: none;
+    padding-left: 20px;
+}
+#contact-header h2{
+    padding:5%;
+    font-size:60px;
+    color: rgb(32, 188, 236);
+}
+#contact-header h3{
+    font-size:25px;
+    margin: 0 auto;
+    width: 80%;
+}
+#contact-header div button{
+    padding: 0px 25px;
+    background-color: rgb(17, 151, 191);
+    color: white;
+    border: none;
+    border-radius:5px;
+}
+#contact-header div button:hover{
+    cursor: pointer;
+    background-color: rgb(32, 188, 236);
+    box-shadow: 0 10px 10px rgb(0 0 0 / 50%);
+    transform: translateY(-2px)!important;
+}
+
+
+/* end */
+
+
+
+/* Footer */
+footer{
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("/img/banner.jpg"); */
+    background-color: #131420;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    /* height: 22vh; */
+    color: #fff;
+    border-top: 1px solid rgb(215, 215, 215);
+}
+footer h2, footer h3{
+    padding:10px;
+}
+footer h2{
+    font-size:40px;
+}
+footer ul{
+    display: flex;
+    justify-content: center;
+    margin:0;
+}
+footer ul li{
+    display: inline;
+    align-self: center;
+    padding-right:20px;
+    padding-top:5px;
+}
+footer ul li img{
+    width: 25%;
+}
+footer ul li a{
+    text-decoration: none;
+    color: rgb(30, 202, 255);
+}
+footer div{
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+/* end */
+

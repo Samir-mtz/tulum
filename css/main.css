@@ -57,10 +57,9 @@ header{
 /* end */
 /* Benner */
 #banner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../img/madreTierra.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("/img/madreTierra.jpeg");
     height: 93vh;
     background-size: cover;
-    /* background-position: 10% 50%; */
     background-repeat: no-repeat;
     background-attachment: fixed;
     text-align: center;
@@ -102,7 +101,6 @@ nav ul li a:hover{
 	position:fixed;
 	z-index:1000;
 	top:0;
-	
 	width:100%;
     background-color: #44B7CF;
 	box-shadow:0px 4px 3px rgba(0,0,0,.5);
@@ -112,13 +110,13 @@ nav ul li a:hover{
 /*Transporte*/
 #Transporte{
     text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../img/tulum-mexico.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("/img/tulum-mexico.webp");
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
     text-align: center;
     padding-top: 5%;
 }
+
 #Transporte h2{
     color: #fff;
 }
@@ -138,8 +136,10 @@ nav ul li a:hover{
     margin-bottom: 2%;
 }
 .transport{
+    display: inline-block;
     margin: 0 auto;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3); 
+    margin-right: 20px;
     margin-bottom: 5%;
     border-radius: 10px;
     border: 1px solid rgb(197, 197, 197);
@@ -156,7 +156,7 @@ nav ul li a:hover{
 }
 .miniatura{
     display: flex;
-    background-image: url("../img/suburban.jpg");
+    background-image: url("/img/suburban.jpg");
     border-radius: 10px 10px 0px 0px;
     height: 250px;
     width: 100%;
@@ -169,7 +169,7 @@ nav ul li a:hover{
 }
 .transport a div:hover{
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.4)  url("../img/suburban.jpg");
+    background: rgba(0, 0, 0, 0.4)  url("/img/suburban.jpg");
     background-size:cover;
     background-blend-mode: darken;
     transition: all 0.2s ease-in-out 0s;
@@ -189,15 +189,35 @@ nav ul li a:hover{
 }
 .icons-person img{
     vertical-align: middle;
-    width:6%;
+    width:4%;
 }
 .icons-person p{
     display: inline-block;
     display: inline-block;
     padding-right:10px;
 }
-#click-transport{
-    display: flex;
+.precio{
+    font-size: 18px;
+    color:#389bf7;
+}
+
+#transporte1{
+    background-image: url("../img/VANF.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+#transporte2{
+    background-image: url("../img/versa.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+#transporte3{
+    background-image: url("../img/TRANSPORTER.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
 }
 /* end */
 
@@ -226,7 +246,7 @@ nav ul li a:hover{
 }
 .miniatura-servicio{
     display: flex;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/Destination.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/Destination.jpg");
     height: 350px;
     width: 100%;
     background-size:cover;
@@ -240,7 +260,7 @@ nav ul li a:hover{
 }
 .Serv a div:hover{
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.4)  url("../img/Destination.jpg");
+    background: rgba(0, 0, 0, 0.4)  url("/img/Destination.jpg");
     background-size:cover;
     background-blend-mode: darken;
     
@@ -248,7 +268,36 @@ nav ul li a:hover{
 .Serv a div:hover #info2{
     visibility: visible;
 }
-
+#servicio1{
+    background-image: url("../img/boda.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+#servicio2{
+    background-image: url("../img/aeropuerto.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+#servicio3{
+    background-image: url("../img/noche.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+#servicio4{
+    background-image: url("../img/zonahotelera.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+#servicio5{
+    background-image: url("../img/cenotes.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
 /* end */
 /* testimonios */
 #testimonios{
@@ -296,7 +345,7 @@ nav ul li a:hover{
 #contact-header{
     border: 1px solid rgba(255, 0, 0, 0);
     height: 95vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url("../img/camioneta.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url("/img/camioneta.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

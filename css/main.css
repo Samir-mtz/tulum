@@ -57,7 +57,7 @@ header{
 /* end */
 /* Benner */
 #banner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("/img/madreTierra.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../img/madreTierra.jpeg");
     height: 93vh;
     background-size: cover;
     background-repeat: no-repeat;
@@ -110,7 +110,7 @@ nav ul li a:hover{
 /*Transporte*/
 #Transporte{
     text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("/img/tulum-mexico.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../img/tulum-mexico.webp");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -169,7 +169,7 @@ nav ul li a:hover{
 }
 .transport a div:hover{
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.4)  url("/img/suburban.jpg");
+    background: rgba(0, 0, 0, 0.4)  url("../img/suburban.jpg");
     background-size:cover;
     background-blend-mode: darken;
     transition: all 0.2s ease-in-out 0s;
@@ -223,7 +223,7 @@ nav ul li a:hover{
 
 /* Servicios */
 #Servicios{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("/img/fondo-servicios.jpeg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../img/fondo-servicios.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -250,7 +250,7 @@ nav ul li a:hover{
 }
 .miniatura-servicio{
     display: flex;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/img/Destination.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/Destination.jpg");
     height: 350px;
     width: 100%;
     background-size:cover;
@@ -349,7 +349,7 @@ nav ul li a:hover{
 #contact-header{
     border: 1px solid rgba(255, 0, 0, 0);
     height: 95vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url("/img/camioneta.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url("../img/camioneta.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;

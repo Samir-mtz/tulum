@@ -156,7 +156,7 @@ nav ul li a:hover{
 }
 .miniatura{
     display: flex;
-    background-image: url("/img/suburban.jpg");
+    background-image: url("../img/suburban.jpg");
     border-radius: 10px 10px 0px 0px;
     height: 250px;
     width: 100%;
@@ -264,7 +264,7 @@ nav ul li a:hover{
 }
 .Serv a div:hover{
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.4)  url("/img/Destination.jpg");
+    background: rgba(0, 0, 0, 0.4)  url("../img/Destination.jpg");
     background-size:cover;
     background-blend-mode: darken;
     

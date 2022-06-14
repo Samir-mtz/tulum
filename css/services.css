@@ -1,0 +1,121 @@
+/*Servicios*/
+#servicios{
+    /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../img/footer.jpg");
+    background-repeat: no-repeat; */
+    /* background-size: cover; */
+    text-align: center;
+}
+#servicios h2{
+    margin: 0;
+    padding-top: 20px;
+    text-align: center;
+    /* color: #fff; */
+    /* color: rgb(250, 56, 153); */
+}
+#discover{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    display:grid;
+    grid-template-columns: 30% 68%;
+    /* grid-template-rows: 10% 10% 10% 10% 10% ; */
+    gap:15px; 
+    align-content: center;
+    align-items: center;
+}
+.discover-data{
+    height: 100%;
+    border-top:2px solid #f16e80;
+    border-bottom:2px solid #f16e80;
+    align-self: center;
+}
+.discover-data h3{
+    margin-top:3%;
+    text-align: center;
+}
+.discover-data p{
+    font-size: 17px;
+    width:90%;
+    margin-top:8%;
+    margin-bottom:5%;
+    text-align: center;
+    /* color: #fff; */
+}
+#discover div{
+    text-align: center;
+}
+#discover div img{
+    
+    width:70%;
+}
+#discover div img:hover{
+    box-shadow: 3px 2px 5px rgb(36, 36, 36);
+}
+
+/* #color1{
+    color: rgb(220, 45, 45);
+}
+#color2{
+    color: rgb(255, 94, 50);
+}
+#color3{
+    color: rgb(158, 27, 206);
+    
+}
+#color4{
+    color: rgb(48, 201, 56);
+}
+#color5{
+    color: rgb(10, 90, 182);
+} */
+#presentacion h2 :nth-child(6){
+    color: rgb(207, 210, 29);
+}
+
+.reservar{
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(17, 151, 191);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.reservar:hover{
+    background-color: rgb(32, 188, 236);
+    box-shadow: 0 10px 10px rgb(0 0 0 / 50%);
+    transform: translateY(-2px)!important;
+    text-decoration: none;
+}
+/*end Servicios*/
+
+/* testimonios */
+#testimonios{
+    text-align: center;
+    height: 70vh;
+    background-color: #f1f1f1;
+    /* background-color: rgba(206, 21, 235, 0.433); */
+    /* color: #fff; */
+    border: 1px solid rgba(255, 0, 0, 0);
+}
+#testimonios h2{
+    padding-top:2%;
+}
+/* end */
+/*Carusell*/
+
+#myCarousel{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top:5%;
+}
+#myCarousel p{
+    text-align: justify;
+}
+.carousel-indicators{
+    background-color: #0000006a;
+}
+.carousel-inner{
+    padding-bottom: 5%;
+}
+
+/* end Carrusell */

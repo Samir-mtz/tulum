@@ -8,7 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/banners.css">
+    <link rel="stylesheet" href="css/ourfleet.css">
     <title>Our Fleet</title>
 </head>
 
@@ -24,8 +27,8 @@
             </ul>
         </div>
         <div id="banner">
-            <nav class="menu">
-                <ul>
+            <nav>
+                <ul class="menu">
                     
                     <li><a href="index.html">Home</a></li>
                     <li><a href="aboutUs.html">About Us</a></li>
@@ -43,7 +46,107 @@
     </header>
     <main>
         <img src="img/separador-rande.png" alt="separador" class="separador">
+        <!-- Transportes -->
+        <div id="Transporte">
+            <div id="click-transport">
+                <div class="transport">
+                    <a href="index.html">
+                        <div class="miniatura" id="transporte1">
+                            <p id="info">Reservar</p>
+                        </div>
+                    </a>
+                    <h3>Transporte Privado</h3>
+                    <div class="icons-person">
+                        <img src="img/icons/persona.png" alt="pasajeros">
+                        <p>8 Pasajeros</p>
+                        <!-- <img src="img/icons/facebook.png" alt="precio"> -->
+                        <p class="precio">Desde $30 USD</p>   
+                    </div>
+                </div>
 
+                <div class="transport">
+                    <a href="index.html">
+                        <div class="miniatura" id="transporte2">
+                            <p id="info">Reservar</p>
+                        </div>
+                    </a>
+                    <h3>Transporte de Lujo</h3>
+                    <div class="icons-person">
+                        <img src="img/icons/persona.png" alt="pasajeros">
+                        <p>2 Pasajeros</p>
+                        <!-- <img src="img/icons/facebook.png" alt="precio"> -->
+                        <p class="precio">Desde $30 USD</p>   
+                    </div>
+                </div>
+
+                <div class="transport">
+                    <a href="index.html">
+                        <div class="miniatura" id="transporte3">
+                            <p id="info">Reservar</p>
+                        </div>
+                    </a>
+                    <h3>Transporte Grupos</h3>
+                    <div class="icons-person">
+                        <img src="img/icons/persona.png" alt="pasajeros">
+                        <p>16 Pasajeros</p>
+                        <!-- <img src="img/icons/facebook.png" alt="precio"> -->
+                        <p class="precio">Desde $50 USD</p>   
+                    </div>
+                </div>
+                <div class="transport">
+                    <a href="index.html">
+                        <div class="miniatura" id="transporte3">
+                            <p id="info">Reservar</p>
+                        </div>
+                    </a>
+                    <h3>Transporte Grupos</h3>
+                    <div class="icons-person">
+                        <img src="img/icons/persona.png" alt="pasajeros">
+                        <p>16 Pasajeros</p>
+                        <!-- <img src="img/icons/facebook.png" alt="precio"> -->
+                        <p class="precio">Desde $50 USD</p>   
+                    </div>
+                </div>
+                <div class="transport">
+                    <a href="index.html">
+                        <div class="miniatura" id="transporte3">
+                            <p id="info">Reservar</p>
+                        </div>
+                    </a>
+                    <h3>Transporte Grupos</h3>
+                    <div class="icons-person">
+                        <img src="img/icons/persona.png" alt="pasajeros">
+                        <p>16 Pasajeros</p>
+                        <!-- <img src="img/icons/facebook.png" alt="precio"> -->
+                        <p class="precio">Desde $50 USD</p>   
+                    </div>
+                </div>
+                <div class="transport">
+                    <a href="index.html">
+                        <div class="miniatura" id="transporte3">
+                            <p id="info">Reservar</p>
+                        </div>
+                    </a>
+                    <h3>Transporte Grupos</h3>
+                    <div class="icons-person">
+                        <img src="img/icons/persona.png" alt="pasajeros">
+                        <p>16 Pasajeros</p>
+                        <!-- <img src="img/icons/facebook.png" alt="precio"> -->
+                        <p class="precio">Desde $50 USD</p>   
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <img src="img/separador-rande.png" alt="separador" class="separador">
+
+        <div id="tarifas">
+            <h2>Tarifas de Traslado / Transfer rates</h2>
+            <img src="img/tarifas.png" alt="tarifas">
+            <a class="reservar">Reservar Ahora</a>
+        </div>
+        
+        <img src="img/separador-rande.png" alt="separador" class="separador">
         <div id="contact-header">
             <h2>Vamos a cualquier lugar que te puedas imaginar</h2>
             <h3>Traslados, fiestas, eventos, bodas aventura, todo lo que requieras, estamos para brindarte el mejor servicio</h3>
@@ -66,6 +169,18 @@
         </ul>
     </footer>
 </body>
-    
+<script>
+    //Fixed Menu
+    $(document).ready(function(){
+        var altura = $('.menu').offset().top;
+        $(window).on('scroll', function(){
+            if ( $(window).scrollTop() > altura ){
+                $('.menu').addClass('menu-fixed');
+            } else {
+                $('.menu').removeClass('menu-fixed');
+            }
+        });
+    });
+</script>    
 </body>
 </html>

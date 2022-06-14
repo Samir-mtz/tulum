@@ -1,0 +1,53 @@
+main{
+    background-color: rgb(243, 243, 243);
+}
+.blog-container{
+    width: 85%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin:0 auto;
+    padding:5%;
+    margin-top: 3%;
+}
+.blog-container img{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+.blog-container p{
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+}
+form{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    grid-template-rows: 50% 30% 20%;
+    grid-gap:3%;
+}
+form input{
+    height: 50%;
+    background-color: rgb(243, 243, 243);
+    border:1px solid #000;
+}
+form textarea{
+    grid-area:1/1/2/4;
+    background-color: rgb(243, 243, 243);
+}
+form .reservar{
+    grid-area:3/1/4/4;
+    width: 40%;
+    justify-self: center;
+    height: 80%;
+}
+form input:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(32, 188, 236);
+}
+form textarea:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(32, 188, 236);
+}
+#form-blog{
+    margin-bottom: 3%;
+}

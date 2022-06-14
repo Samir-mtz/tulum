@@ -1,0 +1,134 @@
+/*Transporte*/
+#Transporte{
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url("../img/tulum-mexico.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-top: 5%;
+}
+
+#Transporte h2{
+    color: #fff;
+}
+#Transporte button{
+    padding: 10px 25px;
+    background-color: rgb(17, 151, 191);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+#Transporte button:hover{
+    background-color: rgb(32, 188, 236);
+    box-shadow: 0 10px 10px rgb(0 0 0 / 50%);
+    transform: translateY(-2px)!important;
+}
+#Transporte button, #Transporte h2{
+    margin-bottom: 2%;
+}
+.transport{
+    display: inline-block;
+    margin: 0 auto;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3); 
+    margin-right: 20px;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    border: 1px solid rgb(197, 197, 197);
+    width: 360px;
+    text-align: center;
+    background-color: rgb(248, 248, 248);
+}
+.transport a{
+    text-decoration: none;
+}
+.miniatura p{
+    margin:auto;
+    color: #fff;
+}
+.miniatura{
+    display: flex;
+    background-image: url("../img/suburban.jpg");
+    border-radius: 10px 10px 0px 0px;
+    height: 250px;
+    width: 100%;
+    background-size:cover;
+    object-position: 50% 50%;
+}
+#info{
+    font-size:18px;
+    visibility: hidden;
+}
+.transport a div:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.4)  url("../img/suburban.jpg");
+    background-size:cover;
+    background-blend-mode: darken;
+    transition: all 0.2s ease-in-out 0s;
+}
+.transport a div:hover #info{
+    visibility: visible;
+}
+.icons-person{
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #000;
+    background-color: #f1f1f1;
+    border-radius: 0px 0px 10px 10px;
+}
+.icons-person img{
+    display: inline-block;
+}
+.icons-person img{
+    vertical-align: middle;
+    width:4%;
+}
+.icons-person p{
+    display: inline-block;
+    display: inline-block;
+    padding-right:10px;
+}
+.precio{
+    font-size: 18px;
+    color:#389bf7;
+}
+
+#transporte1{
+    background-image: url("../img/VANF.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+#transporte2{
+    background-image: url("../img/versa.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+#transporte3{
+    background-image: url("../img/TRANSPORTER.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+}
+
+/* end */
+/*tarifas*/
+#tarifas{
+    text-align: center;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+#tarifas img{
+    width: 80%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+
+#tarifas a{
+    font-size:20px;
+    margin:0 auto;
+    width: 30%;
+    height: 50px;
+    display: block;
+}
+/*end tarifas*/

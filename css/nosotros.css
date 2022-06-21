@@ -118,3 +118,13 @@
     padding: 10px;
     width: 40%;
 }
+
+@media (max-width: 32rem) {
+    #presentacion{
+        display: block;
+    }
+    #info{
+        margin-left:20%;
+        grid-template-columns: 45% 45%;
+    }
+}

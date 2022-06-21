@@ -9,7 +9,8 @@
     margin: 0;
     padding-top: 20px;
     text-align: center;
-    /* color: #fff; */
+    
+    color: #44B7CF;
     /* color: rgb(250, 56, 153); */
 }
 #discover{
@@ -17,7 +18,7 @@
     padding-bottom: 3%;
     display:grid;
     grid-template-columns: 30% 68%;
-    /* grid-template-rows: 10% 10% 10% 10% 10% ; */
+    grid-template-rows: repeat(5, min-content);
     gap:15px; 
     align-content: center;
     align-items: center;
@@ -32,19 +33,30 @@
     margin-top:3%;
     text-align: center;
 }
+.discover-data a{
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+    /* margin-top:3%; */
+    text-align: center;
+}
 .discover-data p{
     font-size: 17px;
     width:90%;
+    text-align: center;
+    margin:0 auto;
     margin-top:8%;
     margin-bottom:5%;
-    text-align: center;
     /* color: #fff; */
 }
+
 #discover div{
     text-align: center;
 }
+#discover div p{
+    font-size: 19px;
+}
 #discover div img{
-    
     width:70%;
 }
 #discover div img:hover{
@@ -90,7 +102,7 @@
 /* testimonios */
 #testimonios{
     text-align: center;
-    height: 70vh;
+    height: 75vh;
     background-color: #f1f1f1;
     /* background-color: rgba(206, 21, 235, 0.433); */
     /* color: #fff; */
@@ -98,6 +110,11 @@
 }
 #testimonios h2{
     padding-top:2%;
+}
+#reservar-testimonios img, #reservar-testimonios h3{
+    display: inline-block;
+    padding: 10px;
+    
 }
 /* end */
 /*Carusell*/
@@ -119,3 +136,18 @@
 }
 
 /* end Carrusell */
+@media (max-width: 32rem) {
+    #servicios h2{
+        font-size: 20px;
+    }
+    #discover{
+        display: block;
+    }
+    .discover-data{
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    #testimonios{
+        height: 65vh;
+    }
+}

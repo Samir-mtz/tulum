@@ -51,3 +51,9 @@ form textarea:focus{
 #form-blog{
     margin-bottom: 3%;
 }
+
+@media (max-width: 32rem) {
+    .blog-container{
+        width: 100%;
+    }
+}

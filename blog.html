@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/banners.css">
     <link rel="stylesheet" href="css/blog.css">
     <title>Blog</title>
@@ -19,14 +21,14 @@
             <ul>
                 <li><a href="https://www.facebook.com/metransfercancun" target="_blank"><img src="img/icons/FACEBOOK2.png" alt="Facebook" id="face"></a></li>
                 <li><a href="https://www.facebook.com/metransfercancun" target="_blank">@metransfercancun</a></li>
-                <li><a href="#"><img src="img/icons/WHATS.png" alt="whatsapp" id="whats" ></a></li>
-                <li>+52 998-263-8291</li>
-                <li><a href="#" id="Registro">Cotización</a></li>
+                <li><a href="https://wa.me/message/S2Q6HU4M3JWXH1" target="_blank"><img src="img/icons/WHATS.png" alt="whatsapp" id="whats" ></a></li>
+                <li><a href="https://wa.me/message/S2Q6HU4M3JWXH1" target="_blank">+52 998-263-8291</a></li>
+                <li><a href="contact.html" id="Registro">Cotización</a></li>
             </ul>
         </div>
         <div id="banner">
-            <nav class="menu">
-                <ul>
+            <nav >
+                <ul class="menu">
                     
                     <li><a href="index.html">Home</a></li>
                     <li><a href="aboutUs.html">About Us</a></li>
@@ -56,20 +58,20 @@
             <img src="img/blog2.jpg" alt="imagen blog 2">
             <h2>La experiencia nos respalda</h2>
             <p>Nos respaldan más de 10 años en el servicio, hemos apoyado a todos los turistas que visitan este hermoso paraíso del Caribe Mexicano.</p>
-            <p>Si usted desea algún servicio adicional no dude en contactarnos via directa por whatsapp en este enlace Hacer Click Aquí</p>
+            <p>Si usted desea algún servicio adicional no dude en contactarnos via directa por whatsapp en este enlace Hacer <a href="https://wa.me/message/S2Q6HU4M3JWXH1" style="font-weight:bold">Click Aquí</a></p>
             <p>Todos los servicios que requieras durante tu estancia, podemos ser tus anfitriones, desde eventos, fiestas, banquetes, parques de diversiones, los mejores lugares que decidas visitar cuenta con nosotros.</p>
             <p>Procuraremos que disfrutes de lo mejor en compania de tus seres queridos o amigos.</p>
             <p>Me Transfer Cancun, es una opción diferente para personas como tú!!</p>
-            <p>Cotiza tu traslado directamente desde aquí: Cotiza tu traslado</p>
+            <p>Cotiza tu traslado directamente desde aquí: <a href="#" style="font-weight:bold">Cotiza tu traslado</a></p>
         </div>
         
         <div class="blog-container" id="form-blog">
             <h2>Dejar un comentario</h2>
             <p>Tu dirección de correo electrónico no será publicada. Los campos obligatorios están marcados con *</p>
-            <form action="" autocomplete="offset">
-                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escribe tu comentario aquí..."></textarea>
-                <input type="text" placeholder="Nombre*" name="nombre">
-                <input type="email" placeholder="Correo electrónico*"  name="correo">
+            <form action="blog.php" autocomplete="offset">
+                <textarea name="mensaje" id="" cols="30" rows="10" placeholder="Escribe tu comentario aquí..." required></textarea>
+                <input type="text" placeholder="Nombre*" name="nombre" required>
+                <input type="email" placeholder="Correo electrónico*"  name="correo" required>
                 <input type="text" placeholder="Web"  name="web">
                 <input type="submit" value="Enviar" class="reservar">
             </form>
@@ -79,7 +81,7 @@
             <h2>Vamos a cualquier lugar que te puedas imaginar</h2>
             <h3>Traslados, fiestas, eventos, bodas aventura, todo lo que requieras, estamos para brindarte el mejor servicio</h3>
             <div>
-                <button>Reservar</button>
+                <a href="contact.html" class="reservar" id="contact-index">Reservar</a>
                 <ul>
                     <li>Comunicate directo con nosotros</li>
                     <li>+52 998-263-8291</li><!-- Link a whatsapp -->
@@ -90,11 +92,50 @@
     <footer>
         <ul>
             <li><h4>Copyright © 2022 Me Tulum Transfer | Powered by Me Tulum Transfer</h4></li>
-            <li><a href="#">Precios</a></li>
+            <li><a href="ourFleet.html#tarifas">Precios</a></li>
             <li><a href="#">Política de Reservas</a></li>
-            <li><a href="#"><img src="img/icons/FACEBOOK2.png" alt="Facebook"></a></li>
-            <li><a href="#"><img src="img/icons/WHATS.png" alt="Whatsapp"></a></li>
+            <li><a href="https://www.facebook.com/metransfercancun"><img src="img/icons/FACEBOOK2.png" alt="Facebook"></a></li>
+            <li><a href="https://wa.me/message/S2Q6HU4M3JWXH1"><img src="img/icons/WHATS.png" alt="Whatsapp"></a></li>
         </ul>
     </footer>    
 </body>
+<script>
+    $(document).ready(function(){
+          // Activate Carousel
+        $("#myCarousel").carousel("cycle");
+        $(".item1").click(function(){
+            $("#myCarousel").carousel(0);
+            });
+            $(".item2").click(function(){
+                $("#myCarousel").carousel(1);
+            });
+            $(".item3").click(function(){
+                $("#myCarousel").carousel(2);
+            });
+            $(".item4").click(function(){
+                $("#myCarousel").carousel(3);
+            });
+            $(".item5").click(function(){
+                $("#myCarousel").carousel(4);
+            });
+            $(".item6").click(function(){
+                $("#myCarousel").carousel(5);
+            });
+            $(".item7").click(function(){
+                $("#myCarousel").carousel(6);
+            });
+        });
+
+    //Fixed Menu
+    $(document).ready(function(){
+        var altura = $('.menu').offset().top;
+        $(window).on('scroll', function(){
+            if ( $(window).scrollTop() > altura ){
+                $('.menu').addClass('menu-fixed');
+            } else {
+                $('.menu').removeClass('menu-fixed');
+            }
+        });
+    });
+</script>    
 </html>

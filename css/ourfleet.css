@@ -132,3 +132,18 @@
     display: block;
 }
 /*end tarifas*/
+
+@media (max-width: 32rem) {
+    #tarifas{
+        overflow-x: scroll;
+    }    
+    #tarifas h2{
+        font-size: 30px;
+    }
+    #tarifas img{
+        width: 300%;
+    }
+    #tarifas a{
+        width: 50%;
+    }
+}

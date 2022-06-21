@@ -83,6 +83,9 @@ textarea{
     text-decoration: none;
     color:black;
 }
+#datos-contacto div a:hover{
+    color:rgb(32, 188, 236);
+}
 #datos-contacto p{
     display: inline-block;
 }
@@ -98,3 +101,16 @@ textarea{
     height: 60vh;
 }
 
+@media (max-width: 32rem) {
+    #contacto{
+        display: block;
+    }
+    
+    #datos-contacto div{
+        text-align: center;
+    }
+    #formulario{
+        margin-top: 8%;
+        width: 95%;
+    }
+}

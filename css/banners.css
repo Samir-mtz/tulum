@@ -12,7 +12,7 @@ body::-webkit-scrollbar{
     display: none;
 }
 header{
-    height: 72vh;
+    height: 100vh;
 }
 .separador{
     display:block;
@@ -35,6 +35,10 @@ header{
 #contacto-header ul li a{
     text-decoration: none;
     color: #fff;
+    
+}
+nav ul li a{
+    text-shadow: 1px 1px 2px #000;
 }
 #Registro{
     text-decoration: none;
@@ -59,20 +63,21 @@ header{
 /* Benner */
 #banner{
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("/img/madreTierra.jpeg"); */
-    height: 65vh;
+    height: 95vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     text-align: center;
     color: #fff;
     background-color: #131420;
 }
 #banner h1{
-    margin-top:20vh;
+    margin-top:30vh;
     font-size: 60px;
     color: rgb(56, 209, 255);
 }
-
+#menu, #cell{
+    display: none;
+}
 
 /* end */
 /* Nav */
@@ -223,13 +228,88 @@ footer div{
 }
 /* end */
 
-@media (max-width: 32rem) {
+@media (max-width: 32.5rem) {
+
     h2{
         font-size: 25px;
     }
     h3{
         font-size: 20px;
     }
+    /*heaader*/
+    header{
+        height: 60vh;
+    }
+    #banner h1{
+        margin-top: 20vh;
+    }
+    #banner{
+        height: 55vh;
+    }
+    #contacto-header{
+        height: auto;
+    }
+    #contacto-header ul li a{
+        font-size: 13px;
+    }
+    #face, #whats{
+        width: 7%;
+    }
+    #Registro{
+        display: none;
+    }
+    /*end header*/
+    /*menu*/
+    #menu{
+        display: block;
+        position:fixed;
+        z-index: 3;
+        width:15%;
+        justify-self: end;
+        margin-left:85%;
+        /* margin-top:5%; */
+        background: #fff;
+        border:none;
+    }
+    #menu img{
+        width:80%;
+        vertical-align: middle;
+    }
+    nav{
+        visibility: hidden;
+    }
+    #cell{
+        display: none;
+        margin-left:30%;
+        text-align: center;
+        position:absolute;
+        z-index: 100;
+        width:70%;
+        background-color:#44B7CF;
+        height:100vh;
+    }
+    #cell ul li{
+        list-style: none;
+        padding:5%;
+        border-bottom:1px solid rgb(17, 151, 191);
+    }
+    #cell ul li a{
+        color:#fff;
+    }
+    #cell button{
+        background: transparent;
+        border: none;
+    }
+    #exit{
+        margin-left:-80%;
+        margin-top:5%;
+        width:10%;
+    }
+    #exit img{
+        width:100%;
+    }
+    /*end menu*/    
+
     #logo{
         width:50%;
         margin-top:15%;
@@ -238,12 +318,6 @@ footer div{
     #principal-title h1{
         font-size: 36px;
     }
-    /* #principal-title h2{
-        font-size: 20px;
-    }
-    #principal-title h3{
-        font-size: 20px;
-    } */
     .transport{
         margin:0 auto;
         margin-top:15px;
@@ -269,12 +343,12 @@ footer div{
     footer ul{
         display: block;
     }
-    /* footer ul li{
-        display: block;
-    } */
-    
+    footer ul li{
+        padding-right: 0;
+    }
     footer ul li img{
         width: 10%;
         padding:5px;
     }
+
 }

@@ -82,6 +82,9 @@ header{
     width:15%;
     margin-top:5%;
 }
+#menu, #cell{
+    display: none;
+}
 /* end */
 /* Nav */
 nav{
@@ -370,7 +373,7 @@ nav ul li a:hover{
 /* testimonios */
 #testimonios{
     text-align: center;
-    height: 75vh;
+    /* height: auto; */
     background-color: #f1f1f1;
     /* background-color: rgba(206, 21, 235, 0.433); */
     /* color: #fff; */
@@ -385,6 +388,11 @@ nav ul li a:hover{
     display: inline-block;
     padding: 10px;
     
+}
+.selfie{
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
 }
 /* #reservar-testimonios{
     display: flex;
@@ -558,13 +566,81 @@ footer div{
     transition: all 0.2s ease-in-out 0s;
 }
 
-@media (max-width: 32rem) {
+@media (max-width: 32.5rem) {
     h2{
         font-size: 25px;
     }
     h3{
         font-size: 20px;
     }
+    #menu{
+        display: block;
+        position:fixed;
+        z-index: 3;
+        width:15%;
+        justify-self: end;
+        margin-left:85%;
+        background: #fff;
+        border:none;
+    }
+    #menu img{
+        width:80%;
+        vertical-align: middle;
+    }
+    #banner{
+        height: 95vh;
+    }
+    /*heaader*/
+    #contacto-header{
+        height: auto;
+    }
+    #contacto-header ul li a{
+        font-size: 13px;
+    }
+    #face, #whats{
+        width: 7%;
+    }
+    #Registro{
+        display: none;
+    }
+    /*end header*/
+    /*menu*/
+    #cell{
+        display: none;
+        margin-left:30%;
+        position:absolute;
+        z-index: 100;
+        text-align: center;
+        width:70%;
+        background-color:#44B7CF;
+        height:100vh;
+    }
+    #cell ul li{
+        list-style: none;
+        padding:5%;
+        border-bottom:1px solid rgb(17, 151, 191);
+    }
+    #cell ul li a{
+        color:#fff;
+    }
+    #cell button{
+        background: transparent;
+        border: none;
+    }
+    #exit{
+        margin-left:-80%;
+        margin-top:5%;
+        width:10%;
+    }
+    #exit img{
+        width:100%;
+    }
+    /*end menu*/
+    /*nav*/
+    nav{
+        display: none;
+    }
+    /*end nav*/
     #logo{
         width:50%;
         margin-top:15%;
@@ -573,18 +649,15 @@ footer div{
     #principal-title h1{
         font-size: 36px;
     }
-    /* #principal-title h2{
-        font-size: 20px;
+    #Transporte{
+        padding-bottom: 10%;
     }
-    #principal-title h3{
-        font-size: 20px;
-    } */
     .transport{
         margin:0 auto;
         margin-top:15px;
     }
-    #testimonios{
-        height: 65vh;
+    .second-transport{
+        padding-bottom: 20px;
     }
     #Servicios{
         display: block;
@@ -594,6 +667,9 @@ footer div{
     }
     #testimonios h2{
         font-size: 23px;
+    }
+    .clientes-fotos{
+        width: 100%;
     }
     #contact-header{
         height: 50vh;
@@ -607,12 +683,14 @@ footer div{
     footer ul{
         display: block;
     }
-    /* footer ul li{
-        display: block;
-    } */
-    
+    footer ul li{
+        padding-right: 0;
+    }
     footer ul li img{
         width: 10%;
         padding:5px;
+    }
+    nav{
+        display: none;
     }
 }

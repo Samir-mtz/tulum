@@ -27,6 +27,20 @@
             </ul>
         </div>
         <div id="banner">
+            <!-- Menu -->
+            <div id="cell" class="cell">
+                <ul>
+                    <button id="exit"><img src="img/icons/exit.png" alt="menu" onclick="hideMenu()"></button>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="ourFleet.html">Our Fleet</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!-- End Menu -->
+            <button id="menu"><img src="img/icons/menu.png" alt="menu" onclick="getMenu()"></button>
             <nav >
                 <ul class="menu">
                     
@@ -127,16 +141,36 @@
             });
         });
 
+    function getMenu(){
+        let b = document.querySelector('body');
+        // let nav = document.querySelector('nav');
+        let selector = document.querySelector('#cell');
+        // nav.style= 'display: none';
+        selector.style= "display: block; position: fixed; top:0;";
+        b.style="overflow: hidden";
+    }
+    function hideMenu(){
+        let b = document.querySelector('body');
+        // let nav = document.querySelector('nav');
+        let selector = document.querySelector('#cell');
+        // nav.style= 'display: block';
+        selector.style= 'display: none';
+        b.style="overflow: scroll";
+    }
     //Fixed Menu
     $(document).ready(function(){
-        var altura = $('.menu').offset().top;
-        $(window).on('scroll', function(){
-            if ( $(window).scrollTop() > altura ){
-                $('.menu').addClass('menu-fixed');
-            } else {
-                $('.menu').removeClass('menu-fixed');
-            }
-        });
+        var screenWidth = screen.width; 
+        console.log(screenWidth);
+        if(screenWidth>450){
+            var altura = $('.menu').offset().top;
+            $(window).on('scroll', function(){
+                if ( $(window).scrollTop() > altura ){
+                    $('.menu').addClass('menu-fixed');
+                } else {
+                    $('.menu').removeClass('menu-fixed');
+                }
+            });
+        }
     });
 </script>    
 </html>

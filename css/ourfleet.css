@@ -1,7 +1,5 @@
 #banner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),url("../img/OURFLEET.png");
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),url("../img/ourfleet.jpg");
 }
 /*Transporte*/
 #Transporte{
@@ -138,8 +136,8 @@
 }
 /*end tarifas*/
 
-@media (max-width: 32rem) {
-    #tarifas{
+@media (max-width: 32.5rem) {
+    #img-tarifas{
         overflow-x: scroll;
     }    
     #tarifas h2{
@@ -150,5 +148,8 @@
     }
     #tarifas a{
         width: 50%;
+    }
+    .transport{
+        margin-right: 0;
     }
 }

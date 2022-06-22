@@ -1,3 +1,8 @@
+#banner{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),url("../img/SERVICES.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /*Servicios*/
 #servicios{
     /* background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)), url("../img/footer.jpg");

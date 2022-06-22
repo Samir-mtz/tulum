@@ -2,7 +2,7 @@
     margin:0;
     padding:0;
     scrollbar-width: none;
-    
+    font-family: 'Archivo Black', sans-serif;
 }
 h2, h3, h1{
     font-family: 'Archivo Black', sans-serif;
@@ -134,7 +134,7 @@ nav ul li a:hover{
 #title-transport{
     background-color: #fff;
     padding: 20px;
-    color: #ff5a81;
+    color: #ED2F59;
 }
 #Transporte button{
     padding: 10px 25px;
@@ -435,7 +435,7 @@ nav ul li a:hover{
 /*fotos clientes*/
 .clientes-fotos {
     margin: 0 auto;
-    width: 70%;
+    width: 50%;
 }
 .clientes-fotos img{
     width: 100%;

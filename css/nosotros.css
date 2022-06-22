@@ -53,12 +53,17 @@ p{
     grid-area: 1/1/2/3;
 }
 #titulos{
-    background-color: #fff;
+    /* background-color: #fff; */
     padding-bottom:3%;
+}
+#titulos h2{
+    /* background-color: #fff; */
+    text-shadow: 1px 1px 2px #000;
 }
 #titulos h4{
     font-weight: bold;
-    color:#000;
+    text-shadow: 1px 1px 2px #000;
+    /* color:#000; */
 }
 
 #presentacion-text{
@@ -118,6 +123,7 @@ p{
 #listas ul li{
     font-size: 20px;
 }
+
 /*caracteristicas*/
 #servicios{
     margin-top:2%;

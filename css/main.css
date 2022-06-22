@@ -393,7 +393,7 @@ nav ul li a:hover{
 /* testimonios */
 #imagenes{
     text-align: center;
-    height: 70vh;
+    height: min-content;
     border: 1px solid rgba(255, 0, 0, 0);
 }
 #imagenes h2{
@@ -429,11 +429,21 @@ nav ul li a:hover{
 }
 
 .carousel-inner{
-    padding-bottom: 5%;
+    padding-bottom:2%;
 }
 
+/*fotos clientes*/
+.clientes-fotos {
+    margin: 0 auto;
+    width: 70%;
+}
+.clientes-fotos img{
+    width: 100%;
+}
+/*end fotos*/
 /* end Carrusell */
 /* end */
+
 /* contacto home */
 #contact-header{
     border: 1px solid rgba(255, 0, 0, 0);

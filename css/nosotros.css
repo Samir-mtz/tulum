@@ -126,6 +126,13 @@ p{
 #info-text{
     align-self: center;
 }
+#calidad{
+    color: #44B7CF;
+    font-size: 25px;
+}
+.estrellas{
+    width: 50px;
+}
 #info-text div{
     display: flex;
     justify-content: center;
@@ -186,5 +193,12 @@ p{
     #banner{
         background-image: url("../img/BANNERABOUTUS22.png");
         background-size: contain;
+    }
+    #calidad{
+        color: #44B7CF;
+        font-size: 20px;
+    }
+    .estrellas{
+        width: 30px;
     }
 }

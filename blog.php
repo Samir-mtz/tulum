@@ -13,13 +13,13 @@
 
     $message = "Este mensaje fue enviado por: " . $name . " \r\n";
     $message .= "Su e-mail es: " . $email . " \r\n";
-    $message .= "Mensaje: " . $_POST['message'] . " \r\n";
+    $message .= "Mensaje: " . $message . " \r\n";
     $message .= "Enviado el: " . date('d/m/Y', time());
 
     $para = 'metransferdominios@gmail.com';
 
     mail($para, $subject, utf8_decode($message), $header);
-    echo '<script>alert("tu mensaje ha sido enviado");
+    echo '<script>alert("Tu mensaje ha sido enviado");
         window.location.href = "index.html";
     </script>';
 ?>

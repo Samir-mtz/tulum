@@ -18,12 +18,14 @@
     $header .= "Mime-Version: 1.0 \r\n";
     $header .= "Content-Type: text/plain";
 
-    $message = "Este mensaje fue enviado por: " . $name . $apellidos .  " \r\n";
+    $message = "Este mensaje fue enviado por: " . $name . " " . $apellidos .  " \r\n";
     $message .= "Su e-mail es: " . $email . " \r\n";
     $message .= "Su telefono es: " . $phone . " \r\n";
     $message .= "Pais de origen: " . $pais . " \r\n";
     $message .= "No. de adultos: " . $adultos . " \r\n";
     $message .= "No. de niños: " . $ninos . " \r\n";
+    $message .= "Informacion de llegada: " . $hora . " \r\n";
+    $message .= "Fecha de llegada: " . $llegada . " \r\n";
     $message .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
     $message .= "Enviado el: " . date('d/m/Y', time());
 

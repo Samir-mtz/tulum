@@ -123,7 +123,19 @@ p{
 #last-text h3{
     text-align: left;
 }
+#info-text{
+    align-self: center;
+}
+#info-text div{
+    display: flex;
+    justify-content: center;
+}
 /*caracteristicas*/
+#somosTu{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
 #servicios{
     margin-top:2%;
     padding:10px;
@@ -149,19 +161,30 @@ p{
     padding: 10px;
     width: 40%;
 }
+#operador{
+    width: 70px;
+}
+#auto{
+    width: 160px;
+    padding-top:30px ;
+}
 
 @media (max-width: 32.5rem) {
     #presentacion{
         display: block;
     }
     #info{
-        margin-left:20%;
-        grid-template-columns: 45% 45%;
+        margin-left:5%;
+        grid-template-columns: 50% 45%;
     }
     #presentacion-img img{
         display: block;
         margin: 0 auto;
         width: 70%;
         padding-bottom: 20px;
+    }
+    #banner{
+        background-image: url("../img/BANNERABOUTUS22.png");
+        background-size: contain;
     }
 }

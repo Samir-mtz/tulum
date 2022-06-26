@@ -372,16 +372,18 @@ nav ul li a:hover{
 /* end */
 /* testimonios */
 #testimonios{
+    background-image: url("../img/bannerTest.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
     text-align: center;
-    /* height: auto; */
-    background-color: #f1f1f1;
-    /* background-color: rgba(206, 21, 235, 0.433); */
-    /* color: #fff; */
     border: 1px solid rgba(255, 0, 0, 0);
     
 }
 #testimonios h2{
     padding-top:2%;
+    color:#fff;
+    text-shadow: 1px 1px 2px #000;
 }
 
 #reservar-testimonios img, #reservar-testimonios h3{
@@ -389,10 +391,19 @@ nav ul li a:hover{
     padding: 10px;
     
 }
+#reservar-testimonios h3{
+    color:#fff;
+    text-shadow: 1px 1px 2px #000;
+}
 .selfie{
     width: 60px;
     border-radius: 50%;
     margin: 0 auto;
+}
+#myCarousel{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255);
+    padding:10px;
 }
 /* #reservar-testimonios{
     display: flex;
@@ -567,6 +578,7 @@ footer div{
 }
 
 @media (max-width: 32.5rem) {
+    
     h2{
         font-size: 25px;
     }
@@ -589,6 +601,7 @@ footer div{
     }
     #banner{
         height: 95vh;
+        background-position: -515px;
     }
     /*heaader*/
     #contacto-header{
@@ -665,6 +678,7 @@ footer div{
     #serv-text{
         margin: 0 auto;
     }
+    
     #testimonios h2{
         font-size: 23px;
     }
@@ -692,5 +706,10 @@ footer div{
     }
     nav{
         display: none;
+    }
+    #contact-header{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url("../img/camioneta2.png");
+        background-size: contain;
+        background-position: 0px 350px;
     }
 }

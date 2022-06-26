@@ -1,5 +1,5 @@
 #banner{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),url("../img/SERVICES.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),url("../img/SERVICES2.png");
 }
 /*Servicios*/
 #servicios{
@@ -104,22 +104,28 @@
 
 /* testimonios */
 #testimonios{
+    background-image: url("../img/bannerTest.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
     text-align: center;
-    /* height: auto; */
-    background-color: #f1f1f1;
-    /* background-color: rgba(206, 21, 235, 0.433); */
-    /* color: #fff; */
     border: 1px solid rgba(255, 0, 0, 0);
     
 }
 #testimonios h2{
     padding-top:2%;
+    color:#fff;
+    text-shadow: 1px 1px 2px #000;
 }
 
 #reservar-testimonios img, #reservar-testimonios h3{
     display: inline-block;
     padding: 10px;
     
+}
+#reservar-testimonios h3{
+    color:#fff;
+    text-shadow: 1px 1px 2px #000;
 }
 .selfie{
     width: 60px;
@@ -138,6 +144,9 @@
     text-align: center;
     margin: 0 auto;
     margin-top:5%;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255);
+    padding:10px;
 }
 #myCarousel p{
     text-align: justify;
@@ -148,7 +157,6 @@
 .carousel-inner{
     padding-bottom: 5%;
 }
-
 /* end Carrusell */
 @media (max-width: 32.5rem) {
     #servicios h2{
@@ -163,5 +171,9 @@
     }
     .discover-data a{
         width: 25%;
+    }
+    #banner{
+        background-image: url("../img/SERVICES22.png");
+        background-size: cover;
     }
 }

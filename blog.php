@@ -16,7 +16,7 @@
     $message .= "Mensaje: " . $_POST['message'] . " \r\n";
     $message .= "Enviado el: " . date('d/m/Y', time());
 
-    $para = 'armando@tecuani.me';
+    $para = 'metransferdominios@gmail.com';
 
     mail($para, $subject, utf8_decode($message), $header);
     echo '<script>alert("tu mensaje ha sido enviado");
